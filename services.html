@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альп-пром</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   <script src="https://kit.fontawesome.com/fc9111f4d7.js" crossorigin="anonymous"></script>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a3fee15f-5bce-4f32-8f3e-be2e45d5d332&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+<body>
+<header>
+        <div class="head">
+            <img src="img/logo.webp" alt="Альп-пром">
+            <div class="contacts">
+                <div>
+                    <a href="mailto:alpprom-kemerovo@mail.ru">alpprom-kemerovo@mail.ru</a>
+                    <a href="https://wa.me/79235069805" title="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <p>+7 (923) 506 98-05</p>
+                </div>
+                <div>
+                    <a href="mailto:alpprom-kemerovo@yandex.ru">alpprom-kemerovo@yandex.ru</a>
+                    <a href="viber://chat?number=79131236773" title="viber"><i class="fab fa-viber"></i></a>
+                    <p>+7 (913) 123 67-73</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <svg class="ham hamRotate ham8" id="navToggle" viewBox="0 0 100 100" width="40" >
+        <path
+              class="line top"
+              d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+        <path
+              class="line middle"
+              d="m 30,50 h 40" />
+        <path
+              class="line bottom"
+              d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+      </svg>
+      <div class="overlay">
+        <ul role="menu">
+            <div class="overlayBorder"></div>
+            <li><a href="/" role="menuitem">Главная</a></li>
+            <div class="overlayBorder"></div>
+            <li><a href="/services.html" role="menuitem">Услуги</a></li>
+            <div class="overlayBorder"></div>
+            <li><a href="/portfolio.html" role="menuitem">Портфолио</a></li>
+            <div class="overlayBorder"></div>
+            <li><a href="tel:+7(923)506-98-05" role="menuitem">+7 (923) 506 98-05</a> <a class="whatsapp" href="https://wa.me/79235069805"><i class="fab fa-whatsapp"></i></a></li>
+            <div class="overlayBorder"></div>
+            <li><a href="tel:+7(913)123-67-73" role="menuitem">+7 (913) 123 67-73</a> <a href="viber://chat?number=79131236773"><i class="fab fa-viber"></i></a></li>
+            <div class="overlayBorder"></div>
+        </ul>
+    </div>
+    <nav class="menu">
+        <ul class="nav-menu">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/services.html">Услуги</a></li>
+            <li><a href="/portfolio.html">Портфолио</a></li>
+            <li id="contacts"><a href="/#map" data-target="anchor">Контакты</a></li>
+        </ul>
+    </nav>
+<div class="content">
+    <div class="price-list">
+        <h1>Прайс лист</h1>
+        <div class="underline"></div>
+        <div class="price-table">
+            <p class="table__title">Наименование услуги</p>
+            <p class="table__title">Количество</p>
+            <p class="table__title">Цена</p>
+            <a href="#i1" data-target="anchor"><p>Наружное утепление стен</p></a>
+            <p>1м²</p>
+            <p>От 2000 руб.</p>
+            <a href="#i2" data-target="anchor"><p>Ремонт межпанельных швов</p></a>
+            <p>1 м.п.</p>
+            <p>От 650 руб.</p>
+            <a href="#i4" data-target="anchor"><p>Работы по ремонту фасада здания</p></a>
+            <p>1м²</p>
+            <p>От 100 руб.</p>
+            <a href="#i3" data-target="anchor"><p>Покрасочные работы</p></a>
+            <p>1м²</p>
+            <p>От 80 руб.</p>
+            <a href="#i5" data-target="anchor"><p>Мойка окон и фасадов здания</p></a>
+            <p>1м²</p>
+            <p>От 40 руб.</p>
+            <a href="#i6" data-target="anchor"><p class="dual">Монтаж-демонтаж наружной релкамы</p></a>
+            <p>1м²</p>
+            <p>От 100 руб.</p>
+            <a href="#i" data-target="anchor"><p class="dual">Монтаж и ремонт 
+                балконных козырьков</p></a>
+            <p>1м²</p>
+            <p>От 2500 руб.</p>
+            <a href="#i7" data-target="anchor"><p>Ремонт балконных плит</p></a>
+            <p>1 шт.</p>
+            <p>От 16000 руб.</p>
+            <a href="#i8" data-target="anchor"><p>Гидроизоляция балконной плиты</p></a>
+            <p>1 м.п.</p>
+            <p>От 500 руб.</p>
+            <a href="#i9" data-target="anchor" ><p>Очистка кровли от снега</p></a>
+            <p>1м²</p>
+            <p>От 19 руб.</p>
+            <a href="#i9" data-target="anchor" ><p>Удаление сосулек</p></a>
+            <p>1м²</p>
+            <p>От 50 руб.</p>
+            <a href="#i10" data-target="anchor" ><p class="dual">Монтаж-демонтаж 
+                металлоконструкций</p></a>
+            <p>1м²</p>
+            <p>Договорная</p>
+            <a href="#i" data-target="anchor" ><p>Монтаж фасадного освещения</p></a>
+            <p>1 м.п.</p>
+            <p>От 250 руб.</p>
+            <a href="#i" data-target="anchor" ><p>Разнопрофильные высотные работы</p></a>
+            <p>-</p>
+            <p>Договорная</p>    
+        </div>
+    </div>
+    <div class="services-disc" id="i">
+        <h2>Описание услуг</h2>
+        <div class="underline"></div>
+        <div class="disc-item" id="i1" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="img/Hexagon1.webp" alt="Hexagon">
+            <p>Утепление фасада в панельных домах позволяет на долгое время забыть о том, что такое мокрые стены и плесень, протекание швов между панелями во время дождей, промерзание, оттаивание и другие воздействия внешней среды. Это наиболее доступный и надежный способ сохранить тепло, «утекающее» сквозь стены домов, особенно панельных. Утеплителем служат материалы с низким коэффициентом теплопроводности. Устройство наружного теплоизоляционного слоя не только повышает уровень комфортности квартиры, но и обновляет внешний вид зданий, увеличивает срок их эксплуатации.</p>
+        </div>
+        <div class="disc-item right" id="i2" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="img/Hexagon2.webp" alt="Hexagon">
+            <p>Профессиональная заделка межпанельных швов – это лучшая возможность подготовить своё жилье к зимним морозам.
+                <br><br>
+                Грамотно выполненная работа в несколько раз сокращает тепловые потери, предотвращает скапливание влаги, что препятствует разрушению конструкций, образованию плесени и грибка</p>
+        </div>
+        <div class="disc-item" id="i3" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="img/Hexagon3.webp" alt="Hexagon">
+            <p>Фасад здания – это лицо здания, а зачастую, и лицо компании, которая располагается в этом здании. В связи с этим необходимо поддерживать фасад здания в хорошем состоянии круглый год.
+                <br><br>
+                Покраска фасадов зданий проводится как на новых сооружениях, так и в составе ремонтных мероприятий. В обоих случаях целью работ является создание эстетически привлекательного внешнего вида строения. Кроме того, окраска фасада еще и является одним из основных способов защиты зданий от преждевременного разрушения.</p>
+        </div>
+        <div class="disc-item right" id="i4" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="img/Hexagon4.webp" alt="Hexagon">
+            <p>Работы по ремонту фасада дома служат не только для придания красивого вида, но и защищает стены домов от неблагоприятных климатических воздействий.
+                И для того, чтобы она полностью выполняла обе эти функции, необходимо использовать качественные материалы и полностью соблюдать технологию ведения ремонтных работ, учитывая все особенности объекта и погодных условий.</p>
+        </div>
+        <div class="disc-item" id="i5" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="img/Hexagon5.webp" alt="Hexagon">
+            <p>Мытье окон и фасадов зданий – одна из самых трудоемких и затратных по времени работ. Кроме того, часто там, где требуется мытье окон, также требуется мытье фасадов зданий. Наша компания выполняет широкий перечень работ таких как: профессиональное мытье окон, фасадов зданий, мытье витрин любых объемов, любых степеней загрязнений и с любыми конструктивными особенностями. Мытье окон, витрин, фасадов зданий выполняется практически в любую погоду, в удобное для заказчика время, без ограничений по высоте зданий и объему работ. Профессиональное мытье окон, фасадов зданий, мытье витрин может осуществляться как в виде разового подряда, так и на основе постоянного абонентского обслуживания.</p>
+        </div>
+        <div class="disc-item right" id="i6" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="img/Hexagon6.webp" alt="Hexagon">
+            <p>Монтаж наружной рекламы – отличное решение для тех компаний, которые делают ставку на повышение имиджа в потребительской среде. Яркие вывести, эффектные баннеры, светодиодные информационные ленты перед входом в торговый центр или офис не только повысят престиж организации, но и привлекут новых клиентов. В нашей компании вы можете заказать профессиональный монтаж и демонтаж наружной рекламы, а именно: сложных сборно-разборных конструкций и вывесок с электропитанием,баннеров,плакатов.</p>
+        </div>
+        <div class="disc-item" id="i7" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="img/Hexagon7.webp" alt="Hexagon">
+            <p>Старый жилищный фонд советской постройки второй половины 20го века постепенно ветшает, и хотя сами здания кажется могут простоять сотню лет, балконы в них являются самым уязвимым местом, и требуют дополнительной защиты, а также реставрации балконных плит.
+                Уже сегодня в России существуют города, где балконные плиты не ремонтируются, а просто напросто  демонтируются или срезают. И это оправдано, ведь разрушенная плита несет серьезную опасность. Наша компания даёт балконным плитам вторую жизнь и сделает все возможное для того,чтобы ваш балкон снова радовал ваш глаз.</p>
+        </div>
+        <div class="disc-item right" id="i8" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="img/Hexagon8.webp" alt="Hexagon">
+            <p>Гидроизоляция – защита строительных материалов и конструкций от разрушающего воздействия воды. Результаты отсутствия гидроизоляционных покрытий можно увидеть на балконах верхних этажей, которые не имеют крыши и остекления, на которые постоянно течет вода с крыши. На закрытых балконах, лоджиях влага попадает внутрь по причине плохо выполненных работ по герметизации.
+                <br><br>
+                Что необходимо предпринять, чтобы избежать подобной ситуации? Одно из обязательных условий – сделать гидроизоляцию балкона (лоджии) с герметизацией швов.В этом вам с удовольствием поможет наша команда.Мы имеем необходимый инвентарь и квалифицированную команду для решения данной задачи.</div>
+        <div class="disc-item" id="i9" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="img/Hexagon9.webp" alt="Hexagon">
+            <p>Работы по очистке кровли от снега и удалению сосулек относятся к разряду особо опасных. Их необходимо производить с надлежащим уровнем обеспечения безопасности, и поэтому для выполнения данного вида высотных работ привлекаются промышленные альпинисты. Применяемая нашими альпинистами технология производства работ и специальное снаряжение, позволяют нам выполнять работы по очистке крыши от снега и удалению сосулек максимально безопасно и в кратчайшие сроки. Мы гарантируем сохранность вашей кровли.</p>
+        </div>
+        <div class="disc-item right" id="i10" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="img/Hexagon10.webp" alt="Hexagon">
+            <p>Демонтаж металлоконструкций может быть востребован по различным причинам. Например перепрофилирование производства. Или переезд производства. Очень часто необходимо произвести частичный демонтаж металлоконструкций для перепланировки помещений. В этом случае важно правильно разработать порядок процесса демонтажа металлической конструкции, чтобы не повредить несущие элементы металлоконструкции или произвести их замену при необходимости. Мы возьмемся выполнить технологически сложнейший демонтаж практически любой сложности</div>
+
+    </div>
+</div>
+
+<a id="toTop"><i class="fas fa-angle-double-up"></i></a>
+<footer>
+    <div class="left-side">
+        <p>"Альп-Пром"</p>
+        <div class="address">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Россия, Кемеровская область, Кемерово,
+                пр-т Ленина, д. 152, корпус Б</p>
+        </div>
+    </div>
+    <div class="right-side">
+        <i class="fab fa-whatsapp"></i>
+        <p>+7 (923) 506 98-05</p>
+
+        <i class="fab fa-viber"></i>
+        <p>+7 (913) 123 67-73</p>
+
+        <i class="fas fa-envelope"></i>
+        <p>alpprom-kemerovo@mail.ru</p>
+
+        <i class="fas fa-envelope"></i>
+        <p>alpprom-kemerovo@yandex.ru</p>
+    </div>
+</footer>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.min.js"></script>
+</html>
