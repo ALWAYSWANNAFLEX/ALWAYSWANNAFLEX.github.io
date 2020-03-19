@@ -802,11 +802,11 @@ $(document).ready(function () {
   $('.modal__carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false
+    arrows: true
   });
   $('.nav-carousel').slick({
     asNavFor: '.modal__carousel',
-    arrows: false,
+    arrows: true,
     focusOnSelect: true,
     adaptiveHeight: true,
     slidesToShow: 3
