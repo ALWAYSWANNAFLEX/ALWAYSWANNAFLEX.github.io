@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -143,13 +143,21 @@
         <span class="underline"></span>
         <div class="feedback_carousel">
             <div class="feedback__item">
-                <img src="img/Galina.webp" alt="person">
+                <picture>
+                    <source srcset="img/Galina.webp" type="image/webp">
+                    <source srcset="img/Galina.png" type="image/jpeg"> 
+                    <img src="img/Galina.png" alt="Alt Text!">
+                  </picture>
                 <div class="poliline"></div>
                 <p><i>Хочу выразить свою благодарность парням из «Альп-Прома»! Мальчишки сделали ремонт швов очень качественно и быстро.  Желаю Вам успехов в работе и дальнейшего процветания!</i></p>
                 <p class="name"><i>Галина Статура</i></p>
             </div>
             <div class="feedback__item">
-                <img src="img/Kirill.webp" alt="person">
+                <picture>
+                    <source srcset="img/Kirill.webp" type="image/webp">
+                    <source srcset="img/Kirill.png" type="image/jpeg"> 
+                    <img src="img/Kirill.png." alt="Alt Text!">
+                  </picture>
                 <div class="poliline"></div>
                 <p><i>Добрый день! Парни устанавливали мне утепление, работой полностью доволен! Хоть услуга и не из дешевых, своих денег стоит. С уверенностью могу советовать Вас своим знакомым.</i></p>
                 <p class="name"><i>Кирилл Лошкарёв</i></p>
@@ -233,7 +241,7 @@ ymaps.ready(function() {
 
     myPlacemark = new ymaps.Placemark([55.355424, 86.174204], {
         hintContent: 'пр-т Ленина, д. 152, корпус Б',
-        balloonContent: 'Это красивая метка'
+        balloonContent: 'пр-т Ленина, д. 152, корпус Б'
     }, {
         iconLayout: 'default#image',
         iconImageHref: '../img/map-icon.webp',

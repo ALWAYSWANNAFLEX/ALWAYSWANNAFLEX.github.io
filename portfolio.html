@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,11 @@
 <body>
 <header>
         <div class="head">
-            <img src="img/logo.webp" alt="Альп-пром">
+            <picture>
+                <source srcset="img/logo.webp" type="image/webp">
+                <source srcset="img/logo.png" type="image/png"> 
+                <img src="img/logo.png" alt="logo">
+              </picture>
             <div class="contacts">
                 <div>
                     <a href="mailto:alpprom-kemerovo@mail.ru">alpprom-kemerovo@mail.ru</a>
@@ -69,40 +73,257 @@
                 <ul class="filter">
                     <li class="active"><a href="#grid" data-filter="*">Все</a></li>
                     <li><a href="#grid" data-filter=".walls">Утепление стен</a></li>
-                    <li><a href="#grid" data-filter=".fix-seams">Ремонт межпанельных швов</a></li>
-                    <li><a href="#grid" data-filter=".fix-facade">Ремонт фасада</a></li>
-                    <li><a href="#grid" data-filter=".mounting-ads">Монтаж/демонтаж наружной рекламы</a></li>
+                    <li><a href="#grid" data-filter=".balcony-repair">Монтаж балконных козырьков</a></li>
+                    <li><a href="#grid" data-filter=".ventilation-recover">Восстановление вентиляционных шахт</a></li>
+                    <li><a href="#grid" data-filter=".complex-sealing">Комплексный ремонт швов</a></li>
+                    <li><a href="#grid" data-filter=".sealing">Герметизация межпанельных швов</a></li>
+                    <li><a href="#grid" data-filter=".repair-plate">Ремонт балконных плит</a></li>
+                    <li><a href="#grid" data-filter=".snow-clean">Уборка снега и сосулек</a></li>
                     <li><a href="#grid" data-filter=".colorize">Покраска</a></li>
-                    <li><a href="#grid" data-filter=".wash">Мойка окон и фасадов</a></li>
+                    <li><a href="#grid" data-filter=".light">Установка освещения</a></li>
                 </ul>
             </div>
             <div class="centrelize">
                 <div class="portfolio-items" id="grid">
-                    <div data-modal="#modal1" class="p-item walls" style="background-image: url('/img/port2.webp');"></div>
-                    <div data-modal="#modal1" class="p-item fix-seams" style="background-image: url('/img/port3.webp');"></div>
-                    <div data-modal="#modal1" class="p-item mounting-ads" style="background-image: url('/img/port1.webp');"></div>
-                    <div data-modal="#modal1" class="p-item fix-facade" style="background-image: url('/img/port4.webp');"></div>
-                    <div data-modal="#modal1" class="p-item colorize" style="background-image: url('/img/port2.webp');"></div>
-                    <div data-modal="#modal1" class="p-item wash" style="background-image: url('/img/port3.webp');"></div>
-                    <div data-modal="#modal1" class="p-item walls" style="background-image: url('/img/port4.webp');"></div>
+                    <div data-modal="#modal1" class="p-item ventilation-recover" style="background-image: url('/img/item1-3.jpg');"></div>
+                    <div data-modal="#modal2" class="p-item ventilation-recover" style="background-image: url('/img/item2-5.jpg');"></div>
+                    <div data-modal="#modal3" class="p-item snow-clean" style="background-image: url('/img/item3-1.jpeg');"></div>
+                    <div data-modal="#modal4" class="p-item snow-clean" style="background-image: url('/img/item4-1.jpg');"></div>
+                    <div data-modal="#modal5" class="p-item colorize" style="background-image: url('/img/item5-5.jpg');"></div>
+                    <div data-modal="#modal6" class="p-item colorize" style="background-image: url('/img/item6-1.jpg');"></div>
+                    <div data-modal="#modal7" class="p-item light" style="background-image: url('/img/item7-1.jpg');"></div>
+                    <div data-modal="#modal8" class="p-item balcony-repair" style="background-image: url('/img/item8-3.jpg');"></div>
+                    <div data-modal="#modal9" class="p-item walls" style="background-image: url('/img/item9-1.jpg');"></div>
+                    <div data-modal="#modal10" class="p-item repair-plate" style="background-image: url('/img/item10-3.jpg');"></div>
+                    <div data-modal="#modal11" class="p-item repair-plate" style="background-image: url('/img/item11-3.jpeg');"></div>
+                    <div data-modal="#modal12" class="p-item complex-sealing" style="background-image: url('/img/item12-8.jpeg');"></div>
+                    <div data-modal="#modal13" class="p-item complex-sealing" style="background-image: url('/img/item13-5.jpeg');"></div>
+                    <div data-modal="#modal14" class="p-item sealing" style="background-image: url('/img/item14-1.jpg');"></div>
+                    <div data-modal="#modal15" class="p-item sealing" style="background-image: url('/img/item15-4.jpeg');"></div>
                 </div>
             </div>
             <div class="modals">
                 <div class='modal' id='modal1'>
                     <span class="close-modal" data-modal="#modal1"></span>
-                    <h2>Утепление стен</h2>
+                    <h2>Восстановление вентиляционных шахт</h2>
+                    <p>Адрес: Комсомольский 53А</p>
+                    <p>Затрачено времени на работу: 1 день</p>
+                    <p>Количество специалистов: 2</p>
                     <div class="modal__carousel">
-                        <div class="img"><img src="/img/port2.webp" alt=""></div>
-                        <div class="img"><img src="/img/port1.webp" alt=""></div>
-                        <div class="img"><img src="/img/port3.webp" alt=""></div>
-                        <div class="img"><img src="/img/port4.webp" alt=""></div>
+                        <div class="img"><img src="/img/item1-2.jpg" alt="ventilation-recover"></div>
+                        <div class="img"><img src="/img/item1-7.jpg" alt="ventilation-recover"></div>
+                        <div class="img"><img src="/img/item1-6.jpg" alt="ventilation-recover"></div>
+                        <div class="img"><img src="/img/item1-5.jpg" alt="ventilation-recover"></div>
+                        <div class="img"><img src="/img/item1-4.jpg" alt="ventilation-recover"></div>
+                        <div class="img"><img src="/img/item1-1.jpg" alt="ventilation-recover"></div>
+                        <div class="img"><img src="/img/item1-3.jpg" alt="ventilation-recover"></div>
                     </div>
-                   <!-- <div class="nav-carousel">
-                        <div class="img gray"></div>
-                        <div class="img red"></div>
-                        <div class="img blue"></div>
-                        <div class="img gray"></div>
-                    </div>-->
+                </div>
+                <div class='modal vertical' id='modal2'>
+                    <span class="close-modal" data-modal="#modal2"></span>
+                    <h2>Восстановление вентиляционных шахт</h2>
+                    <p>Адрес: Комсомольский 53</p>
+                    <p>Затрачено времени на работу: 1 день</p>
+                    <p>Количество специалистов: 2</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item2-1.jpg" alt="ventilation-recover"></div>
+                        <div class="img"><img src="/img/item2-2.jpg" alt="ventilation-recover"></div>
+                        <div class="img"><img src="/img/item2-3.jpg" alt="ventilation-recover"></div>
+                        <div class="img"><img src="/img/item2-4.jpg" alt="ventilation-recover"></div>
+                        <div class="img"><img src="/img/item2-5.jpg" alt="ventilation-recover"></div>
+                    </div>
+                </div>
+                <div class='modal' id='modal3'>
+                    <span class="close-modal" data-modal="#modal3"></span>
+                    <h2>Уборка снега</h2>
+                    <p>Адрес: ТЦ "Лето" Московский 19</p>
+                    <p>Площадь: 2500м²</p>
+                    <p>Затрачено времени на работу: 2 дня</p>
+                    <p>Количество специалистов: 26</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item3-1.jpeg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item3-2.jpeg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item3-3.jpeg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item3-4.jpeg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item3-5.jpeg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item3-6.jpeg" alt="snow-clean"></div>
+                    </div>
+                </div>
+                <div class='modal' id='modal4'>
+                    <span class="close-modal" data-modal="#modal4"></span>
+                    <h2>Уборка снега</h2>
+                    <p>Адрес: Кузнецкий 176</p>
+                    <p>Площадь: 1400м²</p>
+                    <p>Затрачено времени на работу: 2 дня</p>
+                    <p>Количество специалистов: 12</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item4-1.jpg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item4-2.jpg" alt="snow-clean"></div>
+                    </div>
+                </div>
+                <div class='modal vertical' id='modal5'>
+                    <span class="close-modal" data-modal="#modal5"></span>
+                    <h2>Покраска</h2>
+                    <p>Зачистка, обезжиривание, грунтовка и покраска трубы</p>
+                    <p>Адрес: Анжеро-судженск</p>
+                    <p>Затрачено времени на работу: 3 дня</p>
+                    <p>Количество специалистов: 1 альпинист, 1 подсобный рабочий</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item5-1.jpg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item5-2.jpg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item5-3.jpg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item5-4.jpg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item5-5.jpg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item5-6.jpg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item5-7.jpg" alt="snow-clean"></div>
+                        <div class="img"><img src="/img/item5-8.jpg" alt="snow-clean"></div>
+                    </div>
+                </div>
+                <div class='modal' id='modal6'>
+                    <span class="close-modal" data-modal="#modal6"></span>
+                    <h2>Покраска</h2>
+                    <p>Грунтовка и покраска</p>
+                    <p>Адрес: Московский 25</p>
+                    <p>Затрачено времени на работу: 4 недели</p>
+                    <p>Количество специалистов: 7 альпинистов, 2 подсобных рабочих</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item6-1.jpg" alt="snow-clean"></div>
+                    </div>
+                </div>
+                <div class='modal' id='modal7'>
+                    <span class="close-modal" data-modal="#modal7"></span>
+                    <h2>Установка освещения</h2>
+                    <p>Адрес: Парковая 23А</p>
+                    <p>Затрачено времени на работу: 4 недели</p>
+                    <p>Количество специалистов: 7 альпинистов, 2 подсобных рабочих</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item7-1.jpg" alt="snow-clean"></div>
+                    </div>
+                </div>
+                <div class='modal vertical' id='modal8'>
+                    <span class="close-modal" data-modal="#modal8"></span>
+                    <h2>Монтаж балконного козырька</h2>
+                    <p>Адрес: ул. Свободы 11</p>
+                    <p>Затрачено времени на работу: 1 день</p>
+                    <p>Количество специалистов: 1 альпинист, 1 подсобный рабочий</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item8-1.jpg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item8-2.jpg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item8-3.jpg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item8-4.jpg" alt="balcony-repair"></div>
+                    </div>
+                </div>
+                <div class='modal vertical' id='modal9'>
+                    <span class="close-modal" data-modal="#modal9"></span>
+                    <h2>Наружное утепление стен</h2>
+                    <p>Адрес: пр. Ленина 109А</p>
+                    <p>Затрачено времени на работу: 2 дня</p>
+                    <p>Количество специалистов: 2 альпиниста</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item9-1.jpg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item9-2.jpg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item9-3.jpg" alt="balcony-repair"></div>
+                    </div>
+                </div>
+                <div class='modal vertical' id='modal10'>
+                    <span class="close-modal" data-modal="#modal10"></span>
+                    <h2>Ремонт балконной плиты</h2>
+                    <p>Адрес: ул. Гагарина 15А</p>
+                    <p>Затрачено времени на работу: 1 день</p>
+                    <p>Количество специалистов: 1 альпинист, 1 подсобный работник</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item10-1.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item10-2.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item10-3.jpg" alt="balcony-repair"></div>
+                    </div>
+                </div>
+                <div class='modal' id='modal11'>
+                    <span class="close-modal" data-modal="#modal11"></span>
+                    <h2>Ремонт балконной плиты</h2>
+                    <p>Ремонт балконной плиты с демонтажом решётки</p>
+                    <p>Адрес: ул. Ленина 115</p>
+                    <p>Затрачено времени на работу: 1 день</p>
+                    <p>Количество специалистов: 1 альпинист, 1 подсобный работник</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item11-5.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item11-1.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item11-2.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item11-3.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item11-4.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item10-3.jpg" alt="balcony-repair"></div>
+                    </div>
+                </div>
+                <div class='modal vertical' id='modal12'>
+                    <span class="close-modal" data-modal="#modal12"></span>
+                    <h2>Комплексный ремонт швов</h2>
+                    <p>Адрес: пр. Московский 24</p>
+                    <p>Объём: 246 м. п.</p>
+                    <p>Затрачено времени на работу: 2 недели</p>
+                    <p>Количество специалистов: 2 альпиниста</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item12-1.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-2.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-3.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-4.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-5.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-6.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-7.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-8.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-9.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-10.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-11.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-12.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-13.jpg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-14.jpg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item12-15.jpg" alt="balcony-repair"></div>
+                    </div>
+                </div>
+                <div class='modal vertical' id='modal13'>
+                    <span class="close-modal" data-modal="#modal13"></span>
+                    <h2>Комплексный ремонт швов</h2>
+                    <p>Адрес: пр. Комсомольский 41</p>
+                    <p>Объём: 246 м. п.</p>
+                    <p>Затрачено времени на работу: 2 недели</p>
+                    <p>Количество специалистов: 2 альпиниста</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item13-1.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item13-2.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item13-3.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item13-4.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item13-5.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item13-6.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item13-7.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item13-8.jpeg" alt="balcony-repair"></div>
+                    </div>
+                </div>
+                <div class='modal vertical' id='modal14'>
+                    <span class="close-modal" data-modal="#modal14"></span>
+                    <h2>Герметизация межпанельных швов</h2>
+                    <p>Адрес: пр. Комсомольский 53</p>
+                    <p>Объём: 240 м. п.</p>
+                    <p>Затрачено времени на работу: 2 недели</p>
+                    <p>Количество специалистов: 2 альпиниста</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item14-1.jpg" alt="balcony-repair"></div>
+                    </div>
+                </div>
+                <div class='modal' id='modal15'>
+                    <span class="close-modal" data-modal="#modal15"></span>
+                    <h2>Герметизация межпанельных швов</h2>
+                    <p>Адрес: ул. Марковцева 22а</p>
+                    <p>Затрачено времени на работу: 1 день</p>
+                    <p>Количество специалистов: 1 рабочий</p>
+                    <div class="modal__carousel">
+                        <div class="img"><img src="/img/item15-1.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item15-2.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item15-3.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item15-4.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item15-5.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item15-6.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item15-7.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item15-8.jpeg" alt="balcony-repair"></div>
+                        <div class="img"><img src="/img/item15-9.jpeg" alt="balcony-repair"></div>
+                    </div>
                 </div>
             </div>
         </div>
