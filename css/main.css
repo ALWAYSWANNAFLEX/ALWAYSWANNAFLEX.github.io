@@ -286,6 +286,7 @@ li {
     transform: translate(0, 0); } }
 
 header {
+  background-image: url(../img/bg.png);
   background-image: url(../img/bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
