@@ -299,6 +299,8 @@ header {
     padding: 10px 50px 10px 0;
     margin: 0 auto;
     z-index: 1; }
+    header .head .mail {
+      margin-right: 10px; }
     header .head img {
       width: 350px; }
     header .head .contacts div {
@@ -312,7 +314,7 @@ header {
         font-size: 16px; }
       header .head .contacts div i {
         font-size: 20px;
-        margin: 0 10px 0 20px; }
+        margin: 0 10px 0 5px; }
 
 .ham {
   cursor: pointer;
@@ -358,7 +360,7 @@ header {
   background: #ffffff;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 70%;
   height: 100%;
   opacity: .8;
   transform-origin: right;
@@ -373,14 +375,19 @@ header {
     background-color: #000; }
   .overlay li {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
     font-family: ProximaNova;
     font-size: calc(3.13199vw + 1.97763px);
     color: #000;
     opacity: 0;
     padding: 10px 0;
     padding-right: calc(3.3557vw + 4.26174px); }
+    .overlay li .number {
+      display: flex;
+      align-items: center;
+      margin-top: 10px; }
     .overlay li i {
       font-size: 30px;
       margin-left: 4px; }

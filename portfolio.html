@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Альп-пром</title>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="//api-maps.yandex.ru">
+	<link rel="dns-prefetch" href="//api-maps.yandex.ru">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet preload" href="css/main.min.css">
 </head>
 <body>
 <header>
@@ -14,16 +16,18 @@
             <picture>
                 <source srcset="img/logo.webp" type="image/webp">
                 <source srcset="img/logo.png" type="image/png"> 
-                <img src="img/logo.png" alt="logo">
-              </picture>
+                <img src="img/logo.png" alt="Hexagon">
+            </picture>
             <div class="contacts">
                 <div>
-                    <a href="mailto:alpprom-kemerovo@mail.ru">alpprom-kemerovo@mail.ru</a>
+                    <a class="mail" href="mailto:alpprom-kemerovo@mail.ru">alpprom-kemerovo@mail.ru</a>
+                    <p>Данила:</p>
                     <a href="https://wa.me/79235069805" title="whatsapp"><i class="fab fa-whatsapp"></i></a>
                     <p>+7 (923) 506 98-05</p>
                 </div>
                 <div>
-                    <a href="mailto:alpprom-kemerovo@yandex.ru">alpprom-kemerovo@yandex.ru</a>
+                    <a class="mail" href="mailto:alpprom-kemerovo@yandex.ru">alpprom-kemerovo@yandex.ru</a>
+                    <p>Евгений:</p>
                     <a href="viber://chat?number=79131236773" title="viber"><i class="fab fa-viber"></i></a>
                     <p>+7 (913) 123 67-73</p>
                 </div>
@@ -50,9 +54,13 @@
             <div class="overlayBorder"></div>
             <li><a href="/portfolio.html" role="menuitem">Портфолио</a></li>
             <div class="overlayBorder"></div>
-            <li><a href="tel:+7(923)506-98-05" role="menuitem">+7 (923) 506 98-05</a> <a class="whatsapp" href="https://wa.me/79235069805"><i class="fab fa-whatsapp"></i></a></li>
+            <li><p>Данила</p><div class="number"><a href="tel:+7(923)506-98-05" role="menuitem">+7 (923) 506 98-05</a> <a class="whatsapp" href="https://wa.me/79235069805"><i class="fab fa-whatsapp"></i></a></div></li>
             <div class="overlayBorder"></div>
-            <li><a href="tel:+7(913)123-67-73" role="menuitem">+7 (913) 123 67-73</a> <a href="viber://chat?number=79131236773"><i class="fab fa-viber"></i></a></li>
+            <li><p>Евгений</p><div class="number"><a href="tel:+7(913)123-67-73" role="menuitem">+7 (913) 123 67-73</a> <a href="viber://chat?number=79131236773"><i class="fab fa-viber"></i></a></div></li>
+            <div class="overlayBorder"></div>
+            <li><a href="mailto:alpprom-kemerovo@mail.ru">alpprom-kemerovo@mail.ru</a></li>
+            <div class="overlayBorder"></div>
+            <li><a href="mailto:alpprom-kemerovo@yandex.ru">alpprom-kemerovo@yandex.ru</a></li>
             <div class="overlayBorder"></div>
         </ul>
     </div>
