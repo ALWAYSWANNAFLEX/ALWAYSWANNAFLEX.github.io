@@ -2985,6 +2985,7 @@ $(".p-item").on('click', function (e) {
   $(modal).parents(".overlay-modal").addClass("open");
   setTimeout(function () {
     $(modal).addClass("open");
+    $("body").addClass("locked");
   }, 350);
   $(document).on('click', function (e) {
     var target = $(e.target);
@@ -2992,9 +2993,11 @@ $(".p-item").on('click', function (e) {
     if ($(target).hasClass("overlay-modal")) {
       $(target).find(".modal").each(function () {
         $(this).removeClass("open");
+        $("body").removeClass("locked");
       });
       setTimeout(function () {
         $(target).removeClass("open");
+        $("body").removeClass("locked");
       }, 350);
     }
   });
@@ -3007,5 +3010,6 @@ $(".close-modal").on('click', function (e) {
   $(modal).removeClass("open");
   setTimeout(function () {
     $(modal).parents(".overlay-modal").removeClass("open");
+    $("body").removeClass("locked");
   }, 350);
 });
